@@ -1,0 +1,95 @@
+Core C# language
+
+What’s the difference between class, struct, and record? When would you choose each?
+
+Explain const vs readonly vs static readonly.
+
+What are ref, out, and in parameters? Give a use-case for each.
+
+How do ==, Equals, and ReferenceEquals differ? What changes with records?
+
+What is boxing/unboxing? Where can it hurt performance?
+
+Explain using statement vs using declaration. How does IDisposable fit in?
+
+What does init mean on a property? How is it different from set?
+
+var vs explicit typing: what does the compiler actually do?
+
+Collections, LINQ, and data shaping
+
+IEnumerable<T> vs ICollection<T> vs IList<T>: what guarantees do you get?
+
+When would you use HashSet<T> over List<T>?
+
+Write a LINQ query to: group tests by suite, count pass/fail, and order by failure rate.
+
+What’s deferred execution in LINQ? Name a bug it can cause in tests.
+
+Select vs SelectMany—what’s the mental model?
+
+How would you remove duplicates from a list of complex objects? (Equality options?)
+
+Exceptions and reliability
+
+When should you throw vs return an error result? (API design in C#)
+
+Why is catching Exception usually a code smell? When is it acceptable?
+
+Explain try/finally vs using. What happens if Dispose() throws?
+
+How do you build exception messages that are useful for debugging?
+
+Async/await and concurrency
+
+Explain the difference between Task and Thread.
+
+Why can .Result / .Wait() deadlock? What’s the safer alternative?
+
+What’s the difference between Task.WhenAll and Task.WhenAny?
+
+How do you implement a timeout for an async operation properly?
+
+What is ConfigureAwait(false) and when does it matter?
+
+How do you limit concurrency to N tasks at once?
+
+Test automation scenarios (SDET-flavored)
+
+You have flaky tests due to timeouts—design a retry strategy that doesn’t hide real failures.
+
+Given raw log lines, parse them into objects and produce a failure summary report.
+
+Build a “signature” for failures to dedupe: what fields belong in the signature and why?
+
+You must compare yesterday vs today results and detect new failures and fixed tests.
+
+How would you structure a helper library so it’s testable and doesn’t become a “god class”?
+
+OOP and design
+
+What’s the difference between interface inheritance and implementation inheritance?
+
+Explain SOLID with one example each in C#.
+
+When do you prefer composition over inheritance? Give a real example.
+
+What is dependency injection? How does it improve testing?
+
+Performance basics
+
+How do you spot accidental quadratic behavior in C# code (common patterns)?
+
+string concatenation in a loop: what’s wrong and what’s better?
+
+What does Span<T> help with conceptually? When would you avoid it?
+
+Debugging and code-reading
+
+Given a failing test that passes locally but fails in CI, list your investigation steps.
+
+Explain common causes of nondeterminism in tests (time, random, shared state, parallelism).
+
+You see intermittent ObjectDisposedException—what patterns cause this?
+
+You see InvalidOperationException: Collection was modified—why does it happen and fixes?
